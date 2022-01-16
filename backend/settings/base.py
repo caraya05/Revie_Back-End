@@ -2,7 +2,6 @@
 import os
 
 import environ
-
 from decouple import config  # pylint: disable=wrong-import-order
 from django.utils.translation import gettext_lazy as _
 
@@ -32,11 +31,13 @@ THIRD_PARTY_APPS = [
     'import_export',
     'django_filters',
     'geoposition',
+    'users',
     'loducode_utils',
 ]
 
 LOCAL_APPS = [
     'commons',
+    'reviews',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -155,3 +156,4 @@ GEOPOSITION_MARKER_OPTIONS = {
     'cursor': 'move'
 }
 
+AUTH_USER_MODEL = 'users.Person'
