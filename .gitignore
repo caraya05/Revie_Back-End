@@ -1,0 +1,14 @@
+.idea/
+
+# PYTHON FILES
+__pycache__/
+*.py[cod]
+*$py.class
+__pypackages__/
+
+.env
+
+# STATIC AND MEDIA FOLDERS
+static/
+
+*/__pycache__/
