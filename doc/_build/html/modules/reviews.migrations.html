@@ -1,0 +1,180 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>reviews.migrations package &#8212; Revie _ documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Revie _ documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">reviews.migrations package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="reviews-migrations-package">
+<h1>reviews.migrations package<a class="headerlink" href="#reviews-migrations-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-reviews.migrations.0001_initial">
+<span id="reviews-migrations-0001-initial-module"></span><h2>reviews.migrations.0001_initial module<a class="headerlink" href="#module-reviews.migrations.0001_initial" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="reviews.migrations.0001_initial.Migration">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.migrations.0001_initial.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/migrations/0001_initial.html#Migration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.migrations.0001_initial.Migration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.migrations.0001_initial.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[]</span></em><a class="headerlink" href="#reviews.migrations.0001_initial.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.migrations.0001_initial.Migration.initial">
+<span class="sig-name descname"><span class="pre">initial</span></span><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#reviews.migrations.0001_initial.Migration.initial" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.migrations.0001_initial.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='PhotoRestaurant',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.UUIDField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('modified_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('photo_one',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;),</span> <span class="pre">('photo_two',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;),</span> <span class="pre">('photo_three',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;),</span> <span class="pre">('photo_four',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;),</span> <span class="pre">('photo_five',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;)],</span> <span class="pre">options={'verbose_name':</span> <span class="pre">'Photo</span> <span class="pre">Restaurant',</span> <span class="pre">'verbose_name_plural':</span> <span class="pre">'Photos</span> <span class="pre">Restaurants',</span> <span class="pre">'ordering':</span> <span class="pre">['-created_at'],</span> <span class="pre">'abstract':</span> <span class="pre">False}&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='PhotoReview',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.UUIDField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('modified_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('photo_one',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;),</span> <span class="pre">('photo_two',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;),</span> <span class="pre">('photo_three',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;)],</span> <span class="pre">options={'verbose_name':</span> <span class="pre">'Photo</span> <span class="pre">Review',</span> <span class="pre">'verbose_name_plural':</span> <span class="pre">'Photos</span> <span class="pre">Reviews',</span> <span class="pre">'ordering':</span> <span class="pre">['-created_at'],</span> <span class="pre">'abstract':</span> <span class="pre">False}&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='Restaurant',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.UUIDField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('modified_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('nit',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('phone',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('location',</span> <span class="pre">&lt;geoposition.fields.GeopositionField&gt;),</span> <span class="pre">('website',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('description',</span> <span class="pre">&lt;django.db.models.fields.TextField&gt;),</span> <span class="pre">('score',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('date_create',</span> <span class="pre">&lt;django.db.models.fields.DateField&gt;)],</span> <span class="pre">options={'verbose_name':</span> <span class="pre">'Restaurant',</span> <span class="pre">'verbose_name_plural':</span> <span class="pre">'Restaurants',</span> <span class="pre">'ordering':</span> <span class="pre">['-created_at'],</span> <span class="pre">'abstract':</span> <span class="pre">False}&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='Review',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.UUIDField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('modified_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('title',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('date',</span> <span class="pre">&lt;django.db.models.fields.DateField&gt;),</span> <span class="pre">('description',</span> <span class="pre">&lt;django.db.models.fields.TextField&gt;),</span> <span class="pre">('score_service',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('score_food',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('score_environment',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('score_quality_price',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;)],</span> <span class="pre">options={'verbose_name':</span> <span class="pre">'Review',</span> <span class="pre">'verbose_name_plural':</span> <span class="pre">'Reviews',</span> <span class="pre">'ordering':</span> <span class="pre">['-created_at'],</span> <span class="pre">'abstract':</span> <span class="pre">False}&gt;,</span> <span class="pre">&lt;CreateModel</span>&#160; <span class="pre">name='Reviewer',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.UUIDField&gt;),</span> <span class="pre">('created_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('modified_at',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('lastname',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('age',</span> <span class="pre">&lt;django.db.models.fields.IntegerField&gt;),</span> <span class="pre">('gender',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('phone',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('photo',</span> <span class="pre">&lt;django.db.models.fields.files.ImageField&gt;),</span> <span class="pre">('description',</span> <span class="pre">&lt;django.db.models.fields.TextField&gt;)],</span> <span class="pre">options={'verbose_name':</span> <span class="pre">'Reviewer',</span> <span class="pre">'verbose_name_plural':</span> <span class="pre">'Reviewers',</span> <span class="pre">'ordering':</span> <span class="pre">['-created_at'],</span> <span class="pre">'abstract':</span> <span class="pre">False}&gt;]</span></em><a class="headerlink" href="#reviews.migrations.0001_initial.Migration.operations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-reviews.migrations.0002_auto_20220115_2320">
+<span id="reviews-migrations-0002-auto-20220115-2320-module"></span><h2>reviews.migrations.0002_auto_20220115_2320 module<a class="headerlink" href="#module-reviews.migrations.0002_auto_20220115_2320" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="reviews.migrations.0002_auto_20220115_2320.Migration">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.migrations.0002_auto_20220115_2320.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/migrations/0002_auto_20220115_2320.html#Migration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.migrations.0002_auto_20220115_2320.Migration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.migrations.0002_auto_20220115_2320.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[('users',</span> <span class="pre">'__first__'),</span> <span class="pre">('reviews',</span> <span class="pre">'0001_initial')]</span></em><a class="headerlink" href="#reviews.migrations.0002_auto_20220115_2320.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.migrations.0002_auto_20220115_2320.Migration.initial">
+<span class="sig-name descname"><span class="pre">initial</span></span><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#reviews.migrations.0002_auto_20220115_2320.Migration.initial" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.migrations.0002_auto_20220115_2320.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[&lt;AddField</span>&#160; <span class="pre">model_name='reviewer',</span> <span class="pre">name='created_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='reviewer',</span> <span class="pre">name='modified_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='review',</span> <span class="pre">name='created_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='review',</span> <span class="pre">name='modified_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='restaurant',</span> <span class="pre">name='created_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='restaurant',</span> <span class="pre">name='modified_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='photoreview',</span> <span class="pre">name='created_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='photoreview',</span> <span class="pre">name='modified_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='photoreview',</span> <span class="pre">name='review',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='photorestaurant',</span> <span class="pre">name='created_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='photorestaurant',</span> <span class="pre">name='modified_by',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;,</span> <span class="pre">&lt;AddField</span>&#160; <span class="pre">model_name='photorestaurant',</span> <span class="pre">name='restaurant',</span> <span class="pre">field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;]</span></em><a class="headerlink" href="#reviews.migrations.0002_auto_20220115_2320.Migration.operations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-reviews.migrations.0003_auto_20220205_2214">
+<span id="reviews-migrations-0003-auto-20220205-2214-module"></span><h2>reviews.migrations.0003_auto_20220205_2214 module<a class="headerlink" href="#module-reviews.migrations.0003_auto_20220205_2214" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="reviews.migrations.0003_auto_20220205_2214.Migration">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.migrations.0003_auto_20220205_2214.</span></span><span class="sig-name descname"><span class="pre">Migration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/migrations/0003_auto_20220205_2214.html#Migration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.migrations.0003_auto_20220205_2214.Migration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.migrations.0003_auto_20220205_2214.Migration.dependencies">
+<span class="sig-name descname"><span class="pre">dependencies</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[('reviews',</span> <span class="pre">'0002_auto_20220115_2320')]</span></em><a class="headerlink" href="#reviews.migrations.0003_auto_20220205_2214.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.migrations.0003_auto_20220205_2214.Migration.operations">
+<span class="sig-name descname"><span class="pre">operations</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='restaurant',</span> <span class="pre">name='date_create',</span> <span class="pre">field=&lt;django.db.models.fields.DateField&gt;&gt;,</span> <span class="pre">&lt;AlterField</span>&#160; <span class="pre">model_name='review',</span> <span class="pre">name='date',</span> <span class="pre">field=&lt;django.db.models.fields.DateField&gt;&gt;]</span></em><a class="headerlink" href="#reviews.migrations.0003_auto_20220205_2214.Migration.operations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-reviews.migrations">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-reviews.migrations" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">reviews.migrations package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-reviews.migrations.0001_initial">reviews.migrations.0001_initial module</a></li>
+<li><a class="reference internal" href="#module-reviews.migrations.0002_auto_20220115_2320">reviews.migrations.0002_auto_20220115_2320 module</a></li>
+<li><a class="reference internal" href="#module-reviews.migrations.0003_auto_20220205_2214">reviews.migrations.0003_auto_20220205_2214 module</a></li>
+<li><a class="reference internal" href="#module-reviews.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/reviews.migrations.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Revie _ documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">reviews.migrations package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Carlos Amaya, Leidy Peña.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.3.
+    </div>
+  </body>
+</html>

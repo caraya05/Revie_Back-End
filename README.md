@@ -1,7 +1,17 @@
 # Proyecto Base para desarrollo del backend
 
-Este es una base o estructura basica para implementar en los proyectos
+Este es una base o estructura basica para implementar en los proyectos version de python 3.7
 
+`Para correr el proyecto primero se comenta ciudad en person luego migraciones, si las migraciones se eliminaron`
+
+# Crear Documentacion
+1. Crear una carpeta en la raiz del proyecto que se llame doc
+2. entrar en esa carpeta y dar el siguiente comando `sphinx-quickstart`
+3. Se creara unos archivos, luego buscamos en esa carpeta en el archivo `conf.py` pegamos la estructura que tenemos 
+4. luego ejecutamos el siguiente comando `sphinx-apidoc -o modules ..`
+5. Recordar que todo se llama y se organiza en index.rst
+6. luego hacer `make html`.
+7. Guia --> `https://davidcasr.medium.com/c%C3%B3mo-documentar-un-proyecto-django-con-sphinx-80e4a090896e`
 # Variables de entorno
 * Archivo de varibles de entorno .env
 ```

@@ -1,0 +1,177 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>users admin package &#8212; Revie _ documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="reviews admins package" href="reviews.admin.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reviews.admin.html" title="reviews admins package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Revie _ documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">users admin package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="users-admin-package">
+<h1>users admin package<a class="headerlink" href="#users-admin-package" title="Permalink to this headline">¶</a></h1>
+<section id="module-users.admin.person_admin.PersonAdmin">
+<span id="person-class"></span><h2>Person class<a class="headerlink" href="#module-users.admin.person_admin.PersonAdmin" title="Permalink to this headline">¶</a></h2>
+<p>Encapsulate all admin options and functionality for a given model.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.media">
+<span class="sig-prename descclassname"><span class="pre">users.admin.person_admin.PersonAdmin.</span></span><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.urls">
+<span class="sig-prename descclassname"><span class="pre">users.admin.person_admin.PersonAdmin.</span></span><span class="sig-name descname"><span class="pre">urls</span></span><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.urls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-users.admin.person_admin">
+<span id="person-contents"></span><h2>Person contents<a class="headerlink" href="#module-users.admin.person_admin" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">users.admin.person_admin.</span></span><span class="sig-name descname"><span class="pre">PersonAdmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">admin_site</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/users/admin/person_admin.html#PersonAdmin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#users.admin.person_admin.PersonAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.admin.UserAdmin</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.admin.AuditAdmin</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.add_fieldsets">
+<span class="sig-name descname"><span class="pre">add_fieldsets</span></span><em class="property"> <span class="pre">=</span> <span class="pre">((None,</span> <span class="pre">{'classes':</span> <span class="pre">('wide',),</span> <span class="pre">'fields':</span> <span class="pre">('email',</span> <span class="pre">'password1',</span> <span class="pre">'password2',</span> <span class="pre">'rol')}),)</span></em><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.add_fieldsets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.fieldsets">
+<span class="sig-name descname"><span class="pre">fieldsets</span></span><em class="property"> <span class="pre">=</span> <span class="pre">((None,</span> <span class="pre">{'fields':</span> <span class="pre">('email',</span> <span class="pre">'password')}),</span> <span class="pre">('personal</span> <span class="pre">information',</span> <span class="pre">{'fields':</span> <span class="pre">('first_name',</span> <span class="pre">'last_name',</span> <span class="pre">'rol')}),</span> <span class="pre">('Permissions',</span> <span class="pre">{'fields':</span> <span class="pre">('is_active',</span> <span class="pre">'is_staff',</span> <span class="pre">'is_superuser',</span> <span class="pre">'groups',</span> <span class="pre">'user_permissions')}),</span> <span class="pre">('Important</span> <span class="pre">data',</span> <span class="pre">{'fields':</span> <span class="pre">('last_login',</span> <span class="pre">'date_joined')}))</span></em><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.fieldsets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.list_display">
+<span class="sig-name descname"><span class="pre">list_display</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('first_name',</span> <span class="pre">'last_name',</span> <span class="pre">'email',</span> <span class="pre">'is_staff',</span> <span class="pre">'rol')</span></em><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.list_display_links">
+<span class="sig-name descname"><span class="pre">list_display_links</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('email',</span> <span class="pre">'first_name',</span> <span class="pre">'last_name',</span> <span class="pre">'is_staff',</span> <span class="pre">'rol')</span></em><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.list_display_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.list_filter">
+<span class="sig-name descname"><span class="pre">list_filter</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('is_staff',</span> <span class="pre">'is_superuser',</span> <span class="pre">'is_active',</span> <span class="pre">'rol')</span></em><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.list_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="id0">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.ordering">
+<span class="sig-name descname"><span class="pre">ordering</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('email',)</span></em><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="users.admin.person_admin.PersonAdmin.search_fields">
+<span class="sig-name descname"><span class="pre">search_fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('email',</span> <span class="pre">'first_name',</span> <span class="pre">'last_name')</span></em><a class="headerlink" href="#users.admin.person_admin.PersonAdmin.search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">users admin package</a><ul>
+<li><a class="reference internal" href="#module-users.admin.person_admin.PersonAdmin">Person class</a></li>
+<li><a class="reference internal" href="#module-users.admin.person_admin">Person contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="reviews.admin.html"
+                        title="previous chapter">reviews admins package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/users.admin.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="reviews.admin.html" title="reviews admins package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Revie _ documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">users admin package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Carlos Amaya, Leidy Peña.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.3.
+    </div>
+  </body>
+</html>

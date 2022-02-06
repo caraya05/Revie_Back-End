@@ -1,0 +1,911 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>reviews models package &#8212; Revie _ documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="users models package" href="users.models.html" />
+    <link rel="prev" title="commons models package" href="commons.models.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="users.models.html" title="users models package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="commons.models.html" title="commons models package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Revie _ documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">reviews models package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="reviews-models-package">
+<h1>reviews models package<a class="headerlink" href="#reviews-models-package" title="Permalink to this headline">¶</a></h1>
+<section id="module-reviews.models.photo_restaurant.PhotoRestaurant">
+<span id="photorestaurant-class"></span><h2>PhotoRestaurant class<a class="headerlink" href="#module-reviews.models.photo_restaurant.PhotoRestaurant" title="Permalink to this headline">¶</a></h2>
+<p>PhotoRestaurant(id, created_at, modified_at, created_by, modified_by, restaurant, photo_one)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.pk">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.photo_restaurant.PhotoRestaurant.</span></span><span class="sig-name descname"><span class="pre">pk</span></span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.pk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="photorestaurant-contents">
+<h2>PhotoRestaurant contents<a class="headerlink" href="#photorestaurant-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.models.photo_restaurant"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.models.photo_restaurant.</span></span><span class="sig-name descname"><span class="pre">PhotoRestaurant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">restaurant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_one</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/photo_restaurant.html#PhotoRestaurant"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.models.audit.Audit</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.DoesNotExist">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.autocomplete_search_fields">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">autocomplete_search_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/photo_restaurant.html#PhotoRestaurant.autocomplete_search_fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.autocomplete_search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.created_by">
+<span class="sig-name descname"><span class="pre">created_by</span></span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.created_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.get_next_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.get_next_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_next_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.get_next_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.get_previous_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.get_previous_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.get_previous_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.model_name">
+<span class="sig-name descname"><span class="pre">model_name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'PhotoRestaurant'</span></em><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.model_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.modified_by">
+<span class="sig-name descname"><span class="pre">modified_by</span></span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.modified_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;reviews.managers.restaurant_manager.RestaurantManager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.photo_one">
+<span class="sig-name descname"><span class="pre">photo_one</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.photo_one" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just like the FileDescriptor, but for ImageFields. The only difference is
+assigning the width/height to the width_field/height_field, if appropriate.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.restaurant">
+<span class="sig-name descname"><span class="pre">restaurant</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span></em><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.restaurant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.PhotoRestaurant.restaurant_id">
+<span class="sig-name descname"><span class="pre">restaurant_id</span></span><a class="headerlink" href="#reviews.models.photo_restaurant.PhotoRestaurant.restaurant_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="reviews.models.photo_restaurant.create_path_photo_restaurant">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.photo_restaurant.</span></span><span class="sig-name descname"><span class="pre">create_path_photo_restaurant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/photo_restaurant.html#create_path_photo_restaurant"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.photo_restaurant.create_path_photo_restaurant" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-reviews.models.photo_review.PhotoReview">
+<span id="photoreview-class"></span><h2>PhotoReview class<a class="headerlink" href="#module-reviews.models.photo_review.PhotoReview" title="Permalink to this headline">¶</a></h2>
+<p>PhotoReview(id, created_at, modified_at, created_by, modified_by, review, photo_one)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.pk">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.photo_review.PhotoReview.</span></span><span class="sig-name descname"><span class="pre">pk</span></span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.pk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="photoreview-contents">
+<h2>PhotoReview contents<a class="headerlink" href="#photoreview-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.models.photo_review"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.models.photo_review.</span></span><span class="sig-name descname"><span class="pre">PhotoReview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">review</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_one</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/photo_review.html#PhotoReview"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.photo_review.PhotoReview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.models.audit.Audit</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.DoesNotExist">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.autocomplete_search_fields">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">autocomplete_search_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/photo_review.html#PhotoReview.autocomplete_search_fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.autocomplete_search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.created_by">
+<span class="sig-name descname"><span class="pre">created_by</span></span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.created_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.get_next_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.get_next_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_next_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.get_next_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.get_previous_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.get_previous_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.get_previous_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.model_name">
+<span class="sig-name descname"><span class="pre">model_name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'PhotoReview'</span></em><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.model_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.modified_by">
+<span class="sig-name descname"><span class="pre">modified_by</span></span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.modified_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;reviews.managers.photo_review_manager.PhotoReviewManager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.photo_one">
+<span class="sig-name descname"><span class="pre">photo_one</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.photo_one" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just like the FileDescriptor, but for ImageFields. The only difference is
+assigning the width/height to the width_field/height_field, if appropriate.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.review">
+<span class="sig-name descname"><span class="pre">review</span></span><em class="property"><span class="pre">:</span> <span class="pre">Optional</span></em><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.review" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.photo_review.PhotoReview.review_id">
+<span class="sig-name descname"><span class="pre">review_id</span></span><a class="headerlink" href="#reviews.models.photo_review.PhotoReview.review_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="reviews.models.photo_review.create_path_photo_review">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.photo_review.</span></span><span class="sig-name descname"><span class="pre">create_path_photo_review</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/photo_review.html#create_path_photo_review"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.photo_review.create_path_photo_review" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-reviews.models.restaurant.Restaurant">
+<span id="restaurant-class"></span><h2>Restaurant class<a class="headerlink" href="#module-reviews.models.restaurant.Restaurant" title="Permalink to this headline">¶</a></h2>
+<p>Restaurant(id, created_at, modified_at, created_by, modified_by, name, nit, phone, location, website, description, score, date_create)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.pk">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.restaurant.Restaurant.</span></span><span class="sig-name descname"><span class="pre">pk</span></span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.pk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="restaurant-contents">
+<h2>Restaurant contents<a class="headerlink" href="#restaurant-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.models.restaurant"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.models.restaurant.</span></span><span class="sig-name descname"><span class="pre">Restaurant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">website</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_create</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/restaurant.html#Restaurant"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.restaurant.Restaurant" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.models.audit.Audit</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.DoesNotExist">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.autocomplete_search_fields">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">autocomplete_search_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/restaurant.html#Restaurant.autocomplete_search_fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.restaurant.Restaurant.autocomplete_search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.created_by">
+<span class="sig-name descname"><span class="pre">created_by</span></span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.created_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.date_create">
+<span class="sig-name descname"><span class="pre">date_create</span></span><em class="property"><span class="pre">:</span> <span class="pre">datetime.datetime</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.date_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.get_next_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.get_next_by_date_create">
+<span class="sig-name descname"><span class="pre">get_next_by_date_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateField:</span> <span class="pre">date_create&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.get_next_by_date_create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.get_next_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_next_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.get_next_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.get_previous_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.get_previous_by_date_create">
+<span class="sig-name descname"><span class="pre">get_previous_by_date_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateField:</span> <span class="pre">date_create&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.get_previous_by_date_create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.get_previous_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.get_previous_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.location">
+<span class="sig-name descname"><span class="pre">location</span></span><em class="property"><span class="pre">:</span> <span class="pre">geoposition.fields.GeopositionField</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.model_name">
+<span class="sig-name descname"><span class="pre">model_name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'Restaurant'</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.model_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.modified_by">
+<span class="sig-name descname"><span class="pre">modified_by</span></span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.modified_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.nit">
+<span class="sig-name descname"><span class="pre">nit</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.nit" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;reviews.managers.restaurant_manager.RestaurantManager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.phone">
+<span class="sig-name descname"><span class="pre">phone</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.phone" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.photorestaurant_set">
+<span class="sig-name descname"><span class="pre">photorestaurant_set</span></span><a class="headerlink" href="#reviews.models.restaurant.Restaurant.photorestaurant_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.score">
+<span class="sig-name descname"><span class="pre">score</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.score" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.restaurant.Restaurant.website">
+<span class="sig-name descname"><span class="pre">website</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.restaurant.Restaurant.website" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-reviews.models.review.Review">
+<span id="review-class"></span><h2>Review class<a class="headerlink" href="#module-reviews.models.review.Review" title="Permalink to this headline">¶</a></h2>
+<p>Review(id, created_at, modified_at, created_by, modified_by, title, date, description, score_service, score_food, score_environment, score_quality_price)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.pk">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.review.Review.</span></span><span class="sig-name descname"><span class="pre">pk</span></span><a class="headerlink" href="#reviews.models.review.Review.pk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-reviews.models.review">
+<span id="review-contents"></span><h2>Review contents<a class="headerlink" href="#module-reviews.models.review" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="reviews.models.review.Review">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.models.review.</span></span><span class="sig-name descname"><span class="pre">Review</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score_service</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score_food</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score_environment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score_quality_price</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/review.html#Review"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.review.Review" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.models.audit.Audit</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.review.Review.DoesNotExist">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#reviews.models.review.Review.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.review.Review.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#reviews.models.review.Review.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.SCORE_CHOICES">
+<span class="sig-name descname"><span class="pre">SCORE_CHOICES</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[('1',</span> <span class="pre">'1'),</span> <span class="pre">('2',</span> <span class="pre">'2'),</span> <span class="pre">('3',</span> <span class="pre">'3'),</span> <span class="pre">('4',</span> <span class="pre">'4'),</span> <span class="pre">('5',</span> <span class="pre">'5')]</span></em><a class="headerlink" href="#reviews.models.review.Review.SCORE_CHOICES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.autocomplete_search_fields">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">autocomplete_search_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/review.html#Review.autocomplete_search_fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.review.Review.autocomplete_search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.created_by">
+<span class="sig-name descname"><span class="pre">created_by</span></span><a class="headerlink" href="#reviews.models.review.Review.created_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.date">
+<span class="sig-name descname"><span class="pre">date</span></span><em class="property"><span class="pre">:</span> <span class="pre">datetime.datetime</span></em><a class="headerlink" href="#reviews.models.review.Review.date" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.review.Review.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_next_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_next_by_date">
+<span class="sig-name descname"><span class="pre">get_next_by_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateField:</span> <span class="pre">date&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_next_by_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_next_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_next_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_next_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_previous_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_previous_by_date">
+<span class="sig-name descname"><span class="pre">get_previous_by_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateField:</span> <span class="pre">date&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_previous_by_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_previous_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_previous_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_score_environment_display">
+<span class="sig-name descname"><span class="pre">get_score_environment_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.CharField:</span> <span class="pre">score_environment&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_score_environment_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_score_food_display">
+<span class="sig-name descname"><span class="pre">get_score_food_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.CharField:</span> <span class="pre">score_food&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_score_food_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_score_quality_price_display">
+<span class="sig-name descname"><span class="pre">get_score_quality_price_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.CharField:</span> <span class="pre">score_quality_price&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_score_quality_price_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.review.Review.get_score_service_display">
+<span class="sig-name descname"><span class="pre">get_score_service_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.CharField:</span> <span class="pre">score_service&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.review.Review.get_score_service_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.model_name">
+<span class="sig-name descname"><span class="pre">model_name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'Review'</span></em><a class="headerlink" href="#reviews.models.review.Review.model_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.modified_by">
+<span class="sig-name descname"><span class="pre">modified_by</span></span><a class="headerlink" href="#reviews.models.review.Review.modified_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;reviews.managers.review_manager.ReviewManager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#reviews.models.review.Review.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.photoreview_set">
+<span class="sig-name descname"><span class="pre">photoreview_set</span></span><a class="headerlink" href="#reviews.models.review.Review.photoreview_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score1">
+<span class="sig-name descname"><span class="pre">score1</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'1'</span></em><a class="headerlink" href="#reviews.models.review.Review.score1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score2">
+<span class="sig-name descname"><span class="pre">score2</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'2'</span></em><a class="headerlink" href="#reviews.models.review.Review.score2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score3">
+<span class="sig-name descname"><span class="pre">score3</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'3'</span></em><a class="headerlink" href="#reviews.models.review.Review.score3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score4">
+<span class="sig-name descname"><span class="pre">score4</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'4'</span></em><a class="headerlink" href="#reviews.models.review.Review.score4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score5">
+<span class="sig-name descname"><span class="pre">score5</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'5'</span></em><a class="headerlink" href="#reviews.models.review.Review.score5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score_environment">
+<span class="sig-name descname"><span class="pre">score_environment</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.review.Review.score_environment" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score_food">
+<span class="sig-name descname"><span class="pre">score_food</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.review.Review.score_food" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score_quality_price">
+<span class="sig-name descname"><span class="pre">score_quality_price</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.review.Review.score_quality_price" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.score_service">
+<span class="sig-name descname"><span class="pre">score_service</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.review.Review.score_service" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.review.Review.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.review.Review.title" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="reviews.models.review.create_path_review">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.review.</span></span><span class="sig-name descname"><span class="pre">create_path_review</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/review.html#create_path_review"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.review.create_path_review" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-reviews.models.reviewer.Reviewer">
+<span id="reviewer-class"></span><h2>Reviewer class<a class="headerlink" href="#module-reviews.models.reviewer.Reviewer" title="Permalink to this headline">¶</a></h2>
+<p>Reviewer(id, created_at, modified_at, created_by, modified_by, name, lastname, age, gender, phone, photo, description)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.pk">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.reviewer.Reviewer.</span></span><span class="sig-name descname"><span class="pre">pk</span></span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.pk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="reviewer-contents">
+<h2>Reviewer contents<a class="headerlink" href="#reviewer-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.models.reviewer"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.models.reviewer.</span></span><span class="sig-name descname"><span class="pre">Reviewer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_at</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_by</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lastname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">age</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gender</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/reviewer.html#Reviewer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.reviewer.Reviewer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.models.audit.Audit</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.DoesNotExist">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.age">
+<span class="sig-name descname"><span class="pre">age</span></span><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.age" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.autocomplete_search_fields">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">autocomplete_search_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/reviewer.html#Reviewer.autocomplete_search_fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.reviewer.Reviewer.autocomplete_search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.created_by">
+<span class="sig-name descname"><span class="pre">created_by</span></span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.created_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.gender">
+<span class="sig-name descname"><span class="pre">gender</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.gender" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.get_next_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.get_next_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_next_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=True</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.get_next_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.get_previous_by_created_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.get_previous_by_modified_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_modified_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">modified_at&gt;</span></em>, <em class="sig-param"><span class="pre">is_next=False</span></em>, <em class="sig-param"><span class="pre">**kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.get_previous_by_modified_at" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.lastname">
+<span class="sig-name descname"><span class="pre">lastname</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.lastname" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.model_name">
+<span class="sig-name descname"><span class="pre">model_name</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'Reviewer'</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.model_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.modified_by">
+<span class="sig-name descname"><span class="pre">modified_by</span></span><a class="headerlink" href="#reviews.models.reviewer.Reviewer.modified_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;reviews.managers.reviewer_manager.ReviewerManager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.phone">
+<span class="sig-name descname"><span class="pre">phone</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.phone" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.models.reviewer.Reviewer.photo">
+<span class="sig-name descname"><span class="pre">photo</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#reviews.models.reviewer.Reviewer.photo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just like the FileDescriptor, but for ImageFields. The only difference is
+assigning the width/height to the width_field/height_field, if appropriate.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="reviews.models.reviewer.create_path_reviewer">
+<span class="sig-prename descclassname"><span class="pre">reviews.models.reviewer.</span></span><span class="sig-name descname"><span class="pre">create_path_reviewer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/models/reviewer.html#create_path_reviewer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.models.reviewer.create_path_reviewer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">reviews models package</a><ul>
+<li><a class="reference internal" href="#module-reviews.models.photo_restaurant.PhotoRestaurant">PhotoRestaurant class</a></li>
+<li><a class="reference internal" href="#photorestaurant-contents">PhotoRestaurant contents</a></li>
+<li><a class="reference internal" href="#module-reviews.models.photo_review.PhotoReview">PhotoReview class</a></li>
+<li><a class="reference internal" href="#photoreview-contents">PhotoReview contents</a></li>
+<li><a class="reference internal" href="#module-reviews.models.restaurant.Restaurant">Restaurant class</a></li>
+<li><a class="reference internal" href="#restaurant-contents">Restaurant contents</a></li>
+<li><a class="reference internal" href="#module-reviews.models.review.Review">Review class</a></li>
+<li><a class="reference internal" href="#module-reviews.models.review">Review contents</a></li>
+<li><a class="reference internal" href="#module-reviews.models.reviewer.Reviewer">Reviewer class</a></li>
+<li><a class="reference internal" href="#reviewer-contents">Reviewer contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="commons.models.html"
+                        title="previous chapter">commons models package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="users.models.html"
+                        title="next chapter">users models package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/reviews.models.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="users.models.html" title="users models package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="commons.models.html" title="commons models package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Revie _ documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">reviews models package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Carlos Amaya, Leidy Peña.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.3.
+    </div>
+  </body>
+</html>

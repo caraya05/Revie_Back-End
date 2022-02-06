@@ -1,0 +1,396 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>reviews admins package &#8212; Revie _ documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="users admin package" href="users.admin.html" />
+    <link rel="prev" title="commons admin package" href="commons.admin.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="users.admin.html" title="users admin package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="commons.admin.html" title="commons admin package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Revie _ documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">reviews admins package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="reviews-admins-package">
+<h1>reviews admins package<a class="headerlink" href="#reviews-admins-package" title="Permalink to this headline">¶</a></h1>
+<section id="photorestaurantadmin-class">
+<h2>PhotoRestaurantAdmin class<a class="headerlink" href="#photorestaurantadmin-class" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="photorestaurantadmin-contents">
+<h2>PhotoRestaurantAdmin contents<a class="headerlink" href="#photorestaurantadmin-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.admin.photo_restaurant_admin"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.admin.photo_restaurant_admin.</span></span><span class="sig-name descname"><span class="pre">PhotoRestaurantAdmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">admin_site</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/admin/photo_restaurant_admin.html#PhotoRestaurantAdmin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.admin.AuditAdmin</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.list_display">
+<span class="sig-name descname"><span class="pre">list_display</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('restaurant',)</span></em><a class="headerlink" href="#reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.list_display_links">
+<span class="sig-name descname"><span class="pre">list_display_links</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('restaurant',)</span></em><a class="headerlink" href="#reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.list_display_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.list_filter">
+<span class="sig-name descname"><span class="pre">list_filter</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('restaurant__name',)</span></em><a class="headerlink" href="#reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.list_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.media">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.ordering">
+<span class="sig-name descname"><span class="pre">ordering</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('restaurant',)</span></em><a class="headerlink" href="#reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.raw_id_fields">
+<span class="sig-name descname"><span class="pre">raw_id_fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('restaurant',)</span></em><a class="headerlink" href="#reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.raw_id_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.search_fields">
+<span class="sig-name descname"><span class="pre">search_fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('restaurant__name',)</span></em><a class="headerlink" href="#reviews.admin.photo_restaurant_admin.PhotoRestaurantAdmin.search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-reviews.admin.photo_review_admin.PhotoReviewAdmin">
+<span id="photoreviewadmin-class"></span><h2>PhotoReviewAdmin class<a class="headerlink" href="#module-reviews.admin.photo_review_admin.PhotoReviewAdmin" title="Permalink to this headline">¶</a></h2>
+<p>Encapsulate all admin options and functionality for a given model.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin.media">
+<span class="sig-prename descclassname"><span class="pre">reviews.admin.photo_review_admin.PhotoReviewAdmin.</span></span><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin.urls">
+<span class="sig-prename descclassname"><span class="pre">reviews.admin.photo_review_admin.PhotoReviewAdmin.</span></span><span class="sig-name descname"><span class="pre">urls</span></span><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin.urls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="photoreview-contents">
+<h2>PhotoReview contents<a class="headerlink" href="#photoreview-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.admin.photo_review_admin"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.admin.photo_review_admin.</span></span><span class="sig-name descname"><span class="pre">PhotoReviewAdmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">admin_site</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/admin/photo_review_admin.html#PhotoReviewAdmin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.admin.AuditAdmin</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin.list_display">
+<span class="sig-name descname"><span class="pre">list_display</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('review',)</span></em><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin.list_display_links">
+<span class="sig-name descname"><span class="pre">list_display_links</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('review',)</span></em><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin.list_display_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin.list_filter">
+<span class="sig-name descname"><span class="pre">list_filter</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('review__title',)</span></em><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin.list_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="id0">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin.ordering">
+<span class="sig-name descname"><span class="pre">ordering</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('review',)</span></em><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin.raw_id_fields">
+<span class="sig-name descname"><span class="pre">raw_id_fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('review',)</span></em><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin.raw_id_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.photo_review_admin.PhotoReviewAdmin.search_fields">
+<span class="sig-name descname"><span class="pre">search_fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('review__title',)</span></em><a class="headerlink" href="#reviews.admin.photo_review_admin.PhotoReviewAdmin.search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-reviews.admin.restaurant_admin.RestaurantAdmin">
+<span id="restaurantadmin-class"></span><h2>RestaurantAdmin class<a class="headerlink" href="#module-reviews.admin.restaurant_admin.RestaurantAdmin" title="Permalink to this headline">¶</a></h2>
+<p>Encapsulate all admin options and functionality for a given model.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.restaurant_admin.RestaurantAdmin.media">
+<span class="sig-prename descclassname"><span class="pre">reviews.admin.restaurant_admin.RestaurantAdmin.</span></span><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#reviews.admin.restaurant_admin.RestaurantAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.restaurant_admin.RestaurantAdmin.urls">
+<span class="sig-prename descclassname"><span class="pre">reviews.admin.restaurant_admin.RestaurantAdmin.</span></span><span class="sig-name descname"><span class="pre">urls</span></span><a class="headerlink" href="#reviews.admin.restaurant_admin.RestaurantAdmin.urls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="restaurantadmin-contents">
+<h2>RestaurantAdmin contents<a class="headerlink" href="#restaurantadmin-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.admin.restaurant_admin"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.admin.restaurant_admin.RestaurantAdmin">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.admin.restaurant_admin.</span></span><span class="sig-name descname"><span class="pre">RestaurantAdmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">admin_site</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/admin/restaurant_admin.html#RestaurantAdmin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.admin.restaurant_admin.RestaurantAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.admin.AuditAdmin</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.restaurant_admin.RestaurantAdmin.list_display">
+<span class="sig-name descname"><span class="pre">list_display</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',</span> <span class="pre">'nit',</span> <span class="pre">'description')</span></em><a class="headerlink" href="#reviews.admin.restaurant_admin.RestaurantAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.restaurant_admin.RestaurantAdmin.list_display_links">
+<span class="sig-name descname"><span class="pre">list_display_links</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',</span> <span class="pre">'nit',</span> <span class="pre">'description')</span></em><a class="headerlink" href="#reviews.admin.restaurant_admin.RestaurantAdmin.list_display_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.restaurant_admin.RestaurantAdmin.list_filter">
+<span class="sig-name descname"><span class="pre">list_filter</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',)</span></em><a class="headerlink" href="#reviews.admin.restaurant_admin.RestaurantAdmin.list_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="id1">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.restaurant_admin.RestaurantAdmin.ordering">
+<span class="sig-name descname"><span class="pre">ordering</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',)</span></em><a class="headerlink" href="#reviews.admin.restaurant_admin.RestaurantAdmin.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.restaurant_admin.RestaurantAdmin.search_fields">
+<span class="sig-name descname"><span class="pre">search_fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',</span> <span class="pre">'nit')</span></em><a class="headerlink" href="#reviews.admin.restaurant_admin.RestaurantAdmin.search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-reviews.admin.review_admin.ReviewAdmin">
+<span id="reviewadmin-class"></span><h2>ReviewAdmin class<a class="headerlink" href="#module-reviews.admin.review_admin.ReviewAdmin" title="Permalink to this headline">¶</a></h2>
+<p>Encapsulate all admin options and functionality for a given model.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.review_admin.ReviewAdmin.media">
+<span class="sig-prename descclassname"><span class="pre">reviews.admin.review_admin.ReviewAdmin.</span></span><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#reviews.admin.review_admin.ReviewAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.review_admin.ReviewAdmin.urls">
+<span class="sig-prename descclassname"><span class="pre">reviews.admin.review_admin.ReviewAdmin.</span></span><span class="sig-name descname"><span class="pre">urls</span></span><a class="headerlink" href="#reviews.admin.review_admin.ReviewAdmin.urls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="reviewadmin-contents">
+<h2>ReviewAdmin contents<a class="headerlink" href="#reviewadmin-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.admin.review_admin"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.admin.review_admin.ReviewAdmin">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.admin.review_admin.</span></span><span class="sig-name descname"><span class="pre">ReviewAdmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">admin_site</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/admin/review_admin.html#ReviewAdmin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.admin.review_admin.ReviewAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.admin.AuditAdmin</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.review_admin.ReviewAdmin.list_display">
+<span class="sig-name descname"><span class="pre">list_display</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('title',</span> <span class="pre">'date',</span> <span class="pre">'description')</span></em><a class="headerlink" href="#reviews.admin.review_admin.ReviewAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.review_admin.ReviewAdmin.list_display_links">
+<span class="sig-name descname"><span class="pre">list_display_links</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('title',</span> <span class="pre">'date',</span> <span class="pre">'description')</span></em><a class="headerlink" href="#reviews.admin.review_admin.ReviewAdmin.list_display_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.review_admin.ReviewAdmin.list_filter">
+<span class="sig-name descname"><span class="pre">list_filter</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('date',</span> <span class="pre">'score_service',</span> <span class="pre">'score_food',</span> <span class="pre">'score_environment',</span> <span class="pre">'score_quality_price')</span></em><a class="headerlink" href="#reviews.admin.review_admin.ReviewAdmin.list_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="id2">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.review_admin.ReviewAdmin.ordering">
+<span class="sig-name descname"><span class="pre">ordering</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('title',</span> <span class="pre">'date')</span></em><a class="headerlink" href="#reviews.admin.review_admin.ReviewAdmin.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.review_admin.ReviewAdmin.search_fields">
+<span class="sig-name descname"><span class="pre">search_fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('title',</span> <span class="pre">'date')</span></em><a class="headerlink" href="#reviews.admin.review_admin.ReviewAdmin.search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-reviews.admin.reviewer_admin.ReviewerAdmin">
+<span id="reviewer-class"></span><h2>Reviewer class<a class="headerlink" href="#module-reviews.admin.reviewer_admin.ReviewerAdmin" title="Permalink to this headline">¶</a></h2>
+<p>Encapsulate all admin options and functionality for a given model.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.reviewer_admin.ReviewerAdmin.media">
+<span class="sig-prename descclassname"><span class="pre">reviews.admin.reviewer_admin.ReviewerAdmin.</span></span><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#reviews.admin.reviewer_admin.ReviewerAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.reviewer_admin.ReviewerAdmin.urls">
+<span class="sig-prename descclassname"><span class="pre">reviews.admin.reviewer_admin.ReviewerAdmin.</span></span><span class="sig-name descname"><span class="pre">urls</span></span><a class="headerlink" href="#reviews.admin.reviewer_admin.ReviewerAdmin.urls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="reviewer-contents">
+<h2>Reviewer contents<a class="headerlink" href="#reviewer-contents" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-reviews.admin.reviewer_admin"></span><dl class="py class">
+<dt class="sig sig-object py" id="reviews.admin.reviewer_admin.ReviewerAdmin">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">reviews.admin.reviewer_admin.</span></span><span class="sig-name descname"><span class="pre">ReviewerAdmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">admin_site</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reviews/admin/reviewer_admin.html#ReviewerAdmin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reviews.admin.reviewer_admin.ReviewerAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">loducode_utils.admin.AuditAdmin</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.reviewer_admin.ReviewerAdmin.list_display">
+<span class="sig-name descname"><span class="pre">list_display</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',</span> <span class="pre">'lastname',</span> <span class="pre">'description')</span></em><a class="headerlink" href="#reviews.admin.reviewer_admin.ReviewerAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.reviewer_admin.ReviewerAdmin.list_display_links">
+<span class="sig-name descname"><span class="pre">list_display_links</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',</span> <span class="pre">'lastname',</span> <span class="pre">'description')</span></em><a class="headerlink" href="#reviews.admin.reviewer_admin.ReviewerAdmin.list_display_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.reviewer_admin.ReviewerAdmin.list_filter">
+<span class="sig-name descname"><span class="pre">list_filter</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('gender',</span> <span class="pre">'age')</span></em><a class="headerlink" href="#reviews.admin.reviewer_admin.ReviewerAdmin.list_filter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="id3">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.reviewer_admin.ReviewerAdmin.ordering">
+<span class="sig-name descname"><span class="pre">ordering</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',</span> <span class="pre">'lastname',</span> <span class="pre">'age')</span></em><a class="headerlink" href="#reviews.admin.reviewer_admin.ReviewerAdmin.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="reviews.admin.reviewer_admin.ReviewerAdmin.search_fields">
+<span class="sig-name descname"><span class="pre">search_fields</span></span><em class="property"> <span class="pre">=</span> <span class="pre">('name',</span> <span class="pre">'lastname',</span> <span class="pre">'gender')</span></em><a class="headerlink" href="#reviews.admin.reviewer_admin.ReviewerAdmin.search_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">reviews admins package</a><ul>
+<li><a class="reference internal" href="#photorestaurantadmin-class">PhotoRestaurantAdmin class</a></li>
+<li><a class="reference internal" href="#photorestaurantadmin-contents">PhotoRestaurantAdmin contents</a></li>
+<li><a class="reference internal" href="#module-reviews.admin.photo_review_admin.PhotoReviewAdmin">PhotoReviewAdmin class</a></li>
+<li><a class="reference internal" href="#photoreview-contents">PhotoReview contents</a></li>
+<li><a class="reference internal" href="#module-reviews.admin.restaurant_admin.RestaurantAdmin">RestaurantAdmin class</a></li>
+<li><a class="reference internal" href="#restaurantadmin-contents">RestaurantAdmin contents</a></li>
+<li><a class="reference internal" href="#module-reviews.admin.review_admin.ReviewAdmin">ReviewAdmin class</a></li>
+<li><a class="reference internal" href="#reviewadmin-contents">ReviewAdmin contents</a></li>
+<li><a class="reference internal" href="#module-reviews.admin.reviewer_admin.ReviewerAdmin">Reviewer class</a></li>
+<li><a class="reference internal" href="#reviewer-contents">Reviewer contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="commons.admin.html"
+                        title="previous chapter">commons admin package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="users.admin.html"
+                        title="next chapter">users admin package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/reviews.admin.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="users.admin.html" title="users admin package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="commons.admin.html" title="commons admin package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Revie _ documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">reviews admins package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Carlos Amaya, Leidy Peña.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.3.
+    </div>
+  </body>
+</html>

@@ -22,10 +22,6 @@ class PhotoReview(Audit):
                                          on_delete=models.CASCADE)
     photo_one: str = models.ImageField(verbose_name=_('Photo One'), upload_to=create_path_photo_review, blank=True,
                                        null=True)
-    photo_two: str = models.ImageField(verbose_name=_('Photo Two'), upload_to=create_path_photo_review, blank=True,
-                                       null=True)
-    photo_three: str = models.ImageField(verbose_name=_('Photo Three'), upload_to=create_path_photo_review,
-                                         blank=True, null=True)
 
     objects = PhotoReviewManager()
 
