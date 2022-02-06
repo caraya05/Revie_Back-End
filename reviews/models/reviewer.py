@@ -28,8 +28,8 @@ class Reviewer(Audit):
     objects = ReviewerManager()
 
     class Meta(Audit.Meta):
-        verbose_name = "Reviewer"
-        verbose_name_plural = "Reviewers"
+        verbose_name = _('Reviewer')
+        verbose_name_plural = _('Reviewers')
 
     def __str__(self):
         return f'{self.name} {self.lastname}'

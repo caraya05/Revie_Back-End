@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-13 21:58-0500\n"
+"POT-Creation-Date: 2022-01-15 23:52-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,42 +18,191 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: backend/settings/base.py:140
+#: .\backend\settings\base.py:143
 msgid "Spanish"
 msgstr ""
 
-#: backend/settings/base.py:141
+#: .\backend\settings\base.py:144
 msgid "English"
 msgstr ""
 
-#: commons/apps.py:7
+#: .\commons\apps.py:7
 msgid "Commons"
 msgstr ""
 
-#: commons/models/site_configuration.py:17
+#: .\commons\models\site_configuration.py:17
 msgid "Page of Facebook"
 msgstr ""
 
-#: commons/models/site_configuration.py:19
+#: .\commons\models\site_configuration.py:19
 msgid "Page of Twitter"
 msgstr ""
 
-#: commons/models/site_configuration.py:21
+#: .\commons\models\site_configuration.py:21
 msgid "Page of Instagram"
 msgstr ""
 
-#: commons/models/site_configuration.py:23
+#: .\commons\models\site_configuration.py:23 .\reviews\models\restaurant.py:17
 msgid "Location"
 msgstr ""
 
-#: commons/models/site_configuration.py:25
+#: .\commons\models\site_configuration.py:25
 msgid "Icon"
 msgstr ""
 
-#: commons/models/site_configuration.py:32
+#: .\commons\models\site_configuration.py:32
 msgid "Site Configuration"
 msgstr ""
 
-#: commons/models/site_configuration.py:33
+#: .\commons\models\site_configuration.py:33
 msgid "Site Configurations"
+msgstr ""
+
+#: .\reviews\apps.py:7 .\reviews\models\review.py:50
+msgid "Reviews"
+msgstr ""
+
+#: .\reviews\models\photo_restaurant.py:23 .\reviews\models\photo_review.py:23
+msgid "Photo One"
+msgstr ""
+
+#: .\reviews\models\photo_restaurant.py:25 .\reviews\models\photo_review.py:25
+msgid "Photo Two"
+msgstr ""
+
+#: .\reviews\models\photo_restaurant.py:27 .\reviews\models\photo_review.py:27
+msgid "Photo Three"
+msgstr ""
+
+#: .\reviews\models\photo_restaurant.py:29
+msgid "Photo Four"
+msgstr ""
+
+#: .\reviews\models\photo_restaurant.py:31
+msgid "Photo Five"
+msgstr ""
+
+#: .\reviews\models\photo_restaurant.py:37
+msgid "Photo Restaurant"
+msgstr ""
+
+#: .\reviews\models\photo_restaurant.py:38
+msgid "Photos Restaurants"
+msgstr ""
+
+#: .\reviews\models\photo_review.py:33
+msgid "Photo Review"
+msgstr ""
+
+#: .\reviews\models\photo_review.py:34
+msgid "Photos Reviews"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:14 .\reviews\models\reviewer.py:20
+msgid "Name"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:15
+msgid "NIT"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:16 .\reviews\models\reviewer.py:24
+msgid "Phone"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:18
+msgid "Web Site"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:19 .\reviews\models\review.py:37
+#: .\reviews\models\reviewer.py:26
+msgid "Description"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:20
+msgid "Score"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:21
+msgid "Date Create"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:26
+msgid "Restaurant"
+msgstr ""
+
+#: .\reviews\models\restaurant.py:27
+msgid "Restaurants"
+msgstr ""
+
+#: .\reviews\models\review.py:35
+msgid "Title"
+msgstr ""
+
+#: .\reviews\models\review.py:36
+msgid "date"
+msgstr ""
+
+#: .\reviews\models\review.py:38
+msgid "Score Service"
+msgstr ""
+
+#: .\reviews\models\review.py:40
+msgid "Score Food"
+msgstr ""
+
+#: .\reviews\models\review.py:42
+msgid "Score Environment"
+msgstr ""
+
+#: .\reviews\models\review.py:44
+msgid "Score Quality Price"
+msgstr ""
+
+#: .\reviews\models\review.py:49
+msgid "Review"
+msgstr ""
+
+#: .\reviews\models\reviewer.py:21
+msgid "Last Name"
+msgstr ""
+
+#: .\reviews\models\reviewer.py:22
+msgid "Age"
+msgstr ""
+
+#: .\reviews\models\reviewer.py:23
+msgid "Gender"
+msgstr ""
+
+#: .\reviews\models\reviewer.py:25
+msgid "Photo"
+msgstr ""
+
+#: .\reviews\models\reviewer.py:31
+msgid "Reviewer"
+msgstr ""
+
+#: .\reviews\models\reviewer.py:32
+msgid "Reviewers"
+msgstr ""
+
+#: .\users\apps.py:7
+msgid "Users"
+msgstr ""
+
+#: .\users\managers\person_manager.py:13 .\users\managers\person_manager.py:25
+msgid "The given email must be set"
+msgstr ""
+
+#: .\users\managers\person_manager.py:46
+msgid "The given phone must be set"
+msgstr ""
+
+#: .\users\models\person.py:22
+msgid "Person"
+msgstr ""
+
+#: .\users\models\person.py:23
+msgid "Persons"
 msgstr ""

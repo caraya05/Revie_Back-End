@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 from users.managers.person_manager import PersonManager
 
@@ -18,8 +19,8 @@ class Person(AbstractUser):
     objects = PersonManager()
 
     class Meta:
-        verbose_name = "Person"
-        verbose_name_plural = "Persons"
+        verbose_name = _('Person')
+        verbose_name_plural = _('Persons')
 
     def __str__(self):
         return f'{self.email}'

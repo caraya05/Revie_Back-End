@@ -18,13 +18,13 @@ class Restaurant(Audit):
     website: str = models.CharField(verbose_name=_('Web Site'), max_length=100, blank=True, null=True)
     description: str = models.TextField(verbose_name=_('Description'), null=True, blank=True)
     score: str = models.CharField(verbose_name=_('Score'), max_length=10, blank=True, null=True, default='0')
-    date_create: datetime = models.DateField()
+    date_create: datetime = models.DateField(verbose_name=_('Date Create'))
 
     objects = RestaurantManager()
 
     class Meta(Audit.Meta):
-        verbose_name = "Restaurant"
-        verbose_name_plural = "Restaurants"
+        verbose_name = _('Restaurant')
+        verbose_name_plural = _('Restaurants')
 
     def __str__(self):
         return f'{self.name}'

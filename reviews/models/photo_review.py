@@ -30,8 +30,8 @@ class PhotoReview(Audit):
     objects = PhotoReviewManager()
 
     class Meta(Audit.Meta):
-        verbose_name = "Photo Review"
-        verbose_name_plural = "Photos Reviews"
+        verbose_name = _('Photo Review')
+        verbose_name_plural = _('Photos Reviews')
 
     def __str__(self):
         return f'{self.review}'

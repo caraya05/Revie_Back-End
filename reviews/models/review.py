@@ -33,7 +33,7 @@ class Review(Audit):
     ]
 
     title: str = models.CharField(verbose_name=_('Title'), max_length=555)
-    date: datetime = models.DateField()
+    date: datetime = models.DateField(verbose_name=_('date'))
     description: str = models.TextField(verbose_name=_('Description'))
     score_service: str = models.CharField(verbose_name=_('Score Service'), max_length=5, choices=SCORE_CHOICES,
                                           default='0')
@@ -46,8 +46,8 @@ class Review(Audit):
     objects = ReviewManager()
 
     class Meta(Audit.Meta):
-        verbose_name = "Review"
-        verbose_name_plural = "Reviews"
+        verbose_name = _('Review')
+        verbose_name_plural = _('Reviews')
 
     def __str__(self):
         return f'{self.title} {self.date}'

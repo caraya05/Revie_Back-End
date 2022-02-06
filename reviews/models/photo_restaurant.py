@@ -34,8 +34,8 @@ class PhotoRestaurant(Audit):
     objects = RestaurantManager()
 
     class Meta(Audit.Meta):
-        verbose_name = "Photo Restaurant"
-        verbose_name_plural = "Photos Restaurants"
+        verbose_name = _('Photo Restaurant')
+        verbose_name_plural = _('Photos Restaurants')
 
     def __str__(self):
         return f'{self.restaurant}'
