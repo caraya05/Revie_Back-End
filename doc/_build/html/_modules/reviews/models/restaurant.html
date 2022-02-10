@@ -54,17 +54,30 @@
 
 
 <div class="viewcode-block" id="Restaurant"><a class="viewcode-back" href="../../../modules/reviews.models.html#reviews.models.restaurant.Restaurant">[docs]</a><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">Audit</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Model Reviewer.</span>
+<span class="sd">        This Reviewer model have all the necessary fields to manage the health of the pets.</span>
+
+<span class="sd">        :param Audit: AuditModel acts as an abstract base class from which every other model in the project will inherit. This class provides</span>
+<span class="sd">        :type Audit: Model.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
     <span class="n">model_name</span> <span class="o">=</span> <span class="s1">&#39;Restaurant&#39;</span>
 
     <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">555</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Restaurant identifier name.&quot;&quot;&quot;</span>
     <span class="n">nit</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;NIT&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Restaurant identifier nit.&quot;&quot;&quot;</span>
     <span class="n">phone</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Phone&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Cell phone number of the restaurant.&quot;&quot;&quot;</span>
     <span class="n">location</span><span class="p">:</span> <span class="n">GeopositionField</span> <span class="o">=</span> <span class="n">GeopositionField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Location&#39;</span><span class="p">),</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;store the coordinates of the main office of the project contact us&quot;&quot;&quot;</span>
     <span class="n">website</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Web Site&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Official website of the restaurant.&quot;&quot;&quot;</span>
     <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Description&#39;</span><span class="p">),</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Field to detail the status of restaurant.&quot;&quot;&quot;</span>
     <span class="n">score</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Score&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Points of the restaurant.&quot;&quot;&quot;</span>
     <span class="n">date_create</span><span class="p">:</span> <span class="n">datetime</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Date Create&#39;</span><span class="p">))</span>
-
+    <span class="sd">&quot;&quot;&quot;Create date of the restaurant.&quot;&quot;&quot;</span>
     <span class="n">objects</span> <span class="o">=</span> <span class="n">RestaurantManager</span><span class="p">()</span>
 
     <span class="k">class</span> <span class="nc">Meta</span><span class="p">(</span><span class="n">Audit</span><span class="o">.</span><span class="n">Meta</span><span class="p">):</span>
@@ -72,11 +85,11 @@
         <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s1">&#39;Restaurants&#39;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span></div>
 
-<div class="viewcode-block" id="Restaurant.autocomplete_search_fields"><a class="viewcode-back" href="../../../modules/reviews.models.html#reviews.models.restaurant.Restaurant.autocomplete_search_fields">[docs]</a>    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">autocomplete_search_fields</span><span class="p">():</span>
-        <span class="k">return</span> <span class="s1">&#39;name&#39;</span></div></div>
+    <span class="c1"># @staticmethod</span>
+    <span class="c1"># def autocomplete_search_fields():</span>
+    <span class="c1">#     return &#39;name&#39;</span>
 </pre></div>
 
             <div class="clearer"></div>

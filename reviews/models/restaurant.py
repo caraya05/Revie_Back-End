@@ -22,7 +22,7 @@ class Restaurant(Audit):
     nit: str = models.CharField(verbose_name=_('NIT'), max_length=20)
     """Restaurant identifier nit."""
     phone: str = models.CharField(verbose_name=_('Phone'), max_length=10)
-    """Cell phone number of the person."""
+    """Cell phone number of the restaurant."""
     location: GeopositionField = GeopositionField(verbose_name=_('Location'), blank=True, null=True)
     """store the coordinates of the main office of the project contact us"""
     website: str = models.CharField(verbose_name=_('Web Site'), max_length=100, blank=True, null=True)

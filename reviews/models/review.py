@@ -39,16 +39,26 @@ class Review(Audit):
     ]
 
     title: str = models.CharField(verbose_name=_('Title'), max_length=555)
+    """Title of the Review."""
     date: datetime = models.DateField(verbose_name=_('date'))
+    """Date on which the review was performed."""
     description: str = models.TextField(verbose_name=_('Description'))
+    """description of the review."""
     score_service: str = models.CharField(verbose_name=_('Score Service'), max_length=5, choices=SCORE_CHOICES,
                                           default='0')
+    """score of the service."""
     score_food: str = models.CharField(verbose_name=_('Score Food'), max_length=5, choices=SCORE_CHOICES,
                                        default='0')
+    """score of the food."""
+
     score_environment: str = models.CharField(verbose_name=_('Score Environment'), max_length=5, choices=SCORE_CHOICES,
                                               default='0')
+    """score of the environment."""
+
     score_quality_price: str = models.CharField(verbose_name=_('Score Quality Price'), max_length=5,
                                                 choices=SCORE_CHOICES, default='0')
+    """score of the quality price."""
+
     objects = ReviewManager()
 
     class Meta(Audit.Meta):

@@ -54,7 +54,18 @@
 <h1>users models package<a class="headerlink" href="#users-models-package" title="Permalink to this headline">¶</a></h1>
 <section id="module-users.models.person.Person">
 <span id="person-class"></span><h2>Person class<a class="headerlink" href="#module-users.models.person.Person" title="Permalink to this headline">¶</a></h2>
-<p>Person(id, password, last_login, is_superuser, first_name, last_name, is_staff, is_active, date_joined, email, rol)</p>
+<dl class="simple">
+<dt>Model Person.</dt><dd><p>The Person model contains the authentication system, along with all the necessary fields to manage user information.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">param AbstractUser</dt>
+<dd class="field-odd"><p>is a full User model, complete with fields, as an abstract class so that you can inherit from it and add your own profile fields and methods.</p>
+</dd>
+<dt class="field-even">type AbstractUser</dt>
+<dd class="field-even"><p>Model.</p>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="users.models.person.Person.is_anonymous">
 <span class="sig-prename descclassname"><span class="pre">users.models.person.Person.</span></span><span class="sig-name descname"><span class="pre">is_anonymous</span></span><a class="headerlink" href="#users.models.person.Person.is_anonymous" title="Permalink to this definition">¶</a></dt>
@@ -79,8 +90,17 @@ authenticated in templates.</p>
 <span id="person-contents"></span><h2>Person contents<a class="headerlink" href="#module-users.models.person" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="users.models.person.Person">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">users.models.person.</span></span><span class="sig-name descname"><span class="pre">Person</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_login</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_superuser</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_staff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_active</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_joined</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rol</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/users/models/person.html#Person"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#users.models.person.Person" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">users.models.person.</span></span><span class="sig-name descname"><span class="pre">Person</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/users/models/person.html#Person"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#users.models.person.Person" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.models.AbstractUser</span></code></p>
+<dl class="simple">
+<dt>Model Person.</dt><dd><p>The Person model contains the authentication system, along with all the necessary fields to manage user information.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>AbstractUser</strong> (<em>Model.</em>) – is a full User model, complete with fields, as an abstract class so that you can inherit from it and add your own profile fields and methods.</p>
+</dd>
+</dl>
 <dl class="py exception">
 <dt class="sig sig-object py" id="users.models.person.Person.DoesNotExist">
 <em class="property"><span class="pre">exception</span> </em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#users.models.person.Person.DoesNotExist" title="Permalink to this definition">¶</a></dt>
@@ -101,11 +121,6 @@ authenticated in templates.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="users.models.person.Person.USERNAME_FIELD">
 <span class="sig-name descname"><span class="pre">USERNAME_FIELD</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'email'</span></em><a class="headerlink" href="#users.models.person.Person.USERNAME_FIELD" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="users.models.person.Person.autocomplete_search_fields">
-<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">autocomplete_search_fields</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/users/models/person.html#Person.autocomplete_search_fields"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#users.models.person.Person.autocomplete_search_fields" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -349,8 +364,7 @@ class built by <code class="docutils literal notranslate"><span class="pre">crea
 <dl class="py attribute">
 <dt class="sig sig-object py" id="users.models.person.Person.rol">
 <span class="sig-name descname"><span class="pre">rol</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#users.models.person.Person.rol" title="Permalink to this definition">¶</a></dt>
-<dd><p>A wrapper for a deferred-loading field. When the value is read from this
-object the first time, the query is executed.</p>
+<dd><p>Person’s role</p>
 </dd></dl>
 
 <dl class="py attribute">

@@ -60,16 +60,28 @@
 
 
 <div class="viewcode-block" id="Reviewer"><a class="viewcode-back" href="../../../modules/reviews.models.html#reviews.models.reviewer.Reviewer">[docs]</a><span class="k">class</span> <span class="nc">Reviewer</span><span class="p">(</span><span class="n">Audit</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Model Reviewer.</span>
+<span class="sd">        This Reviewer model have all the necessary fields to manage the health of the pets.</span>
+
+<span class="sd">        :param Audit: AuditModel acts as an abstract base class from which every other model in the project will inherit. This class provides</span>
+<span class="sd">        :type Audit: Model.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">model_name</span> <span class="o">=</span> <span class="s1">&#39;Reviewer&#39;</span>
 
     <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">555</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Reviewer identifier name.&quot;&quot;&quot;</span>
     <span class="n">lastname</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Last Name&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">555</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Reviewer identifier lastname.&quot;&quot;&quot;</span>
     <span class="n">age</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Age&#39;</span><span class="p">),</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Reviewer identifier age.&quot;&quot;&quot;</span>
     <span class="n">gender</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Gender&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Gender of the Reviewer. (Male, Trans , Female).&quot;&quot;&quot;</span>
     <span class="n">phone</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Phone&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Cell phone number of the phone.&quot;&quot;&quot;</span>
     <span class="n">photo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ImageField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Photo&#39;</span><span class="p">),</span> <span class="n">upload_to</span><span class="o">=</span><span class="n">create_path_reviewer</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Photo of the Reviewer.&quot;&quot;&quot;</span>
     <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Description&#39;</span><span class="p">),</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
+    <span class="sd">&quot;&quot;&quot;Field to detail the status of Reviewer.&quot;&quot;&quot;</span>
     <span class="n">objects</span> <span class="o">=</span> <span class="n">ReviewerManager</span><span class="p">()</span>
 
     <span class="k">class</span> <span class="nc">Meta</span><span class="p">(</span><span class="n">Audit</span><span class="o">.</span><span class="n">Meta</span><span class="p">):</span>
@@ -77,11 +89,11 @@
         <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s1">&#39;Reviewers&#39;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">lastname</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">lastname</span><span class="si">}</span><span class="s1">&#39;</span></div>
 
-<div class="viewcode-block" id="Reviewer.autocomplete_search_fields"><a class="viewcode-back" href="../../../modules/reviews.models.html#reviews.models.reviewer.Reviewer.autocomplete_search_fields">[docs]</a>    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">autocomplete_search_fields</span><span class="p">():</span>
-        <span class="k">return</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;lastname&#39;</span></div></div>
+    <span class="c1"># @staticmethod</span>
+    <span class="c1"># def autocomplete_search_fields():</span>
+    <span class="c1">#     return &#39;name&#39;, &#39;lastname&#39;</span>
 </pre></div>
 
             <div class="clearer"></div>

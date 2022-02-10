@@ -62,12 +62,21 @@
 
 
 <div class="viewcode-block" id="PhotoRestaurant"><a class="viewcode-back" href="../../../modules/reviews.models.html#reviews.models.photo_restaurant.PhotoRestaurant">[docs]</a><span class="k">class</span> <span class="nc">PhotoRestaurant</span><span class="p">(</span><span class="n">Audit</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Model Reviewer.</span>
+<span class="sd">        This Reviewer model have all the necessary fields to manage the health of the pets.</span>
+
+<span class="sd">        :param Audit: AuditModel acts as an abstract base class from which every other model in the project will inherit. This class provides</span>
+<span class="sd">        :type Audit: Model.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
     <span class="n">model_name</span> <span class="o">=</span> <span class="s1">&#39;PhotoRestaurant&#39;</span>
     <span class="n">restaurant</span><span class="p">:</span> <span class="n">Optional</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">to</span><span class="o">=</span><span class="s1">&#39;reviews.restaurant&#39;</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;Restaurant&#39;</span><span class="p">,</span>
                                              <span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Unique code already generated automatically to identify the restaurant.It&#39;s is in a foreign key and is in UUID&quot;&quot;&quot;</span>
     <span class="n">photo_one</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ImageField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Photo One&#39;</span><span class="p">),</span> <span class="n">upload_to</span><span class="o">=</span><span class="n">create_path_photo_restaurant</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                                        <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
+    <span class="sd">&quot;&quot;&quot;Photo of the PhotoRestaurant.&quot;&quot;&quot;</span>
+    <span class="n">order</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Order&#39;</span><span class="p">))</span>
+    <span class="sd">&quot;&quot;&quot;Number of the image.&quot;&quot;&quot;</span>
     <span class="n">objects</span> <span class="o">=</span> <span class="n">RestaurantManager</span><span class="p">()</span>
 
     <span class="k">class</span> <span class="nc">Meta</span><span class="p">(</span><span class="n">Audit</span><span class="o">.</span><span class="n">Meta</span><span class="p">):</span>

@@ -61,6 +61,12 @@
 
 
 <div class="viewcode-block" id="Review"><a class="viewcode-back" href="../../../modules/reviews.models.html#reviews.models.review.Review">[docs]</a><span class="k">class</span> <span class="nc">Review</span><span class="p">(</span><span class="n">Audit</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Model Reviewer.</span>
+<span class="sd">        This Reviewer model have all the necessary fields to manage the health of the pets.</span>
+
+<span class="sd">        :param Audit: AuditModel acts as an abstract base class from which every other model in the project will inherit. This class provides</span>
+<span class="sd">        :type Audit: Model.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
     <span class="n">model_name</span> <span class="o">=</span> <span class="s1">&#39;Review&#39;</span>
 
     <span class="n">score1</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
@@ -78,16 +84,26 @@
     <span class="p">]</span>
 
     <span class="n">title</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Title&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">555</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Title of the Review.&quot;&quot;&quot;</span>
     <span class="n">date</span><span class="p">:</span> <span class="n">datetime</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">))</span>
+    <span class="sd">&quot;&quot;&quot;Date on which the review was performed.&quot;&quot;&quot;</span>
     <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Description&#39;</span><span class="p">))</span>
+    <span class="sd">&quot;&quot;&quot;description of the review.&quot;&quot;&quot;</span>
     <span class="n">score_service</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Score Service&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">SCORE_CHOICES</span><span class="p">,</span>
                                           <span class="n">default</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;score of the service.&quot;&quot;&quot;</span>
     <span class="n">score_food</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Score Food&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">SCORE_CHOICES</span><span class="p">,</span>
                                        <span class="n">default</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;score of the food.&quot;&quot;&quot;</span>
+
     <span class="n">score_environment</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Score Environment&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="n">SCORE_CHOICES</span><span class="p">,</span>
                                               <span class="n">default</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;score of the environment.&quot;&quot;&quot;</span>
+
     <span class="n">score_quality_price</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Score Quality Price&#39;</span><span class="p">),</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
                                                 <span class="n">choices</span><span class="o">=</span><span class="n">SCORE_CHOICES</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;0&#39;</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;score of the quality price.&quot;&quot;&quot;</span>
+
     <span class="n">objects</span> <span class="o">=</span> <span class="n">ReviewManager</span><span class="p">()</span>
 
     <span class="k">class</span> <span class="nc">Meta</span><span class="p">(</span><span class="n">Audit</span><span class="o">.</span><span class="n">Meta</span><span class="p">):</span>

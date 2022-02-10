@@ -51,12 +51,20 @@
 
 
 <div class="viewcode-block" id="Person"><a class="viewcode-back" href="../../../modules/users.models.html#users.models.person.Person">[docs]</a><span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">AbstractUser</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Model Person.</span>
+<span class="sd">        The Person model contains the authentication system, along with all the necessary fields to manage user information.</span>
+
+<span class="sd">       :param AbstractUser: is a full User model, complete with fields, as an abstract class so that you can inherit from it and add your own profile fields and methods.</span>
+<span class="sd">       :type AbstractUser: Model.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">model_name</span> <span class="o">=</span> <span class="s1">&#39;Person&#39;</span>
     <span class="n">username</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="n">email</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">EmailField</span><span class="p">(</span><span class="s1">&#39;email address&#39;</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Email of the person, it is unique, that is, unrepeatable.&quot;&quot;&quot;</span>
     <span class="n">rol</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;Rol&#39;</span><span class="p">,</span>
                                 <span class="n">max_length</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">help_text</span><span class="o">=</span><span class="s1">&#39;Reviewer = RW, Restaurant = RT&#39;</span><span class="p">,</span>
                                 <span class="n">null</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;Person&#39;s role&quot;&quot;&quot;</span>
 
     <span class="n">USERNAME_FIELD</span> <span class="o">=</span> <span class="s1">&#39;email&#39;</span>
     <span class="n">REQUIRED_FIELDS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;rol&#39;</span><span class="p">,</span> <span class="p">]</span>
@@ -68,11 +76,11 @@
         <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s1">&#39;Persons&#39;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">email</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">email</span><span class="si">}</span><span class="s1">&#39;</span></div>
 
-<div class="viewcode-block" id="Person.autocomplete_search_fields"><a class="viewcode-back" href="../../../modules/users.models.html#users.models.person.Person.autocomplete_search_fields">[docs]</a>    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">autocomplete_search_fields</span><span class="p">():</span>
-        <span class="k">return</span> <span class="s1">&#39;email&#39;</span></div></div>
+    <span class="c1"># @staticmethod</span>
+    <span class="c1"># def autocomplete_search_fields():</span>
+    <span class="c1">#     return &#39;email&#39;</span>
 </pre></div>
 
             <div class="clearer"></div>

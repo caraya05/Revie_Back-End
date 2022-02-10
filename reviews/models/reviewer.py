@@ -30,7 +30,7 @@ class Reviewer(Audit):
     age: int = models.IntegerField(verbose_name=_('Age'), default='0')
     """Reviewer identifier age."""
     gender: str = models.CharField(verbose_name=_('Gender'), max_length=3)
-    """Gender of the Reviewer. (Male, Female)."""
+    """Gender of the Reviewer. (Male, Trans , Female)."""
     phone: str = models.CharField(verbose_name=_('Phone'), max_length=10)
     """Cell phone number of the phone."""
     photo: str = models.ImageField(verbose_name=_('Photo'), upload_to=create_path_reviewer, blank=True, null=True)
