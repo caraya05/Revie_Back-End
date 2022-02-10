@@ -17,12 +17,21 @@ def create_path_photo_review(instance, filename):
 
 
 class PhotoReview(Audit):
+    """Model Reviewer.
+        This Reviewer model have all the necessary fields to manage the health of the pets.
+
+        :param Audit: AuditModel acts as an abstract base class from which every other model in the project will inherit. This class provides
+        :type Audit: Model.
+        """
     model_name = 'PhotoReview'
     review: Optional = models.ForeignKey(to='reviews.review', verbose_name='Review',
                                          on_delete=models.CASCADE)
+    """Unique code already generated automatically to identify the PhotoReview .It's is in a foreign key and is in UUID"""
     photo_one: str = models.ImageField(verbose_name=_('Photo One'), upload_to=create_path_photo_review, blank=True,
                                        null=True)
-
+    """Photo of the PhotoReview."""
+    order: int = models.IntegerField(verbose_name=_('Order'))
+    """Number of the image."""
     objects = PhotoReviewManager()
 
     class Meta(Audit.Meta):

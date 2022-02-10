@@ -16,6 +16,12 @@ def create_path_review(instance, filename):
 
 
 class Review(Audit):
+    """Model Reviewer.
+        This Reviewer model have all the necessary fields to manage the health of the pets.
+
+        :param Audit: AuditModel acts as an abstract base class from which every other model in the project will inherit. This class provides
+        :type Audit: Model.
+        """
     model_name = 'Review'
 
     score1 = '1'
