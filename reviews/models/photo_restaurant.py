@@ -18,7 +18,7 @@ def create_path_photo_restaurant(instance, filename):
 
 class PhotoRestaurant(Audit):
     """Model Reviewer.
-        This Reviewer model have all the necessary fields to manage the health of the pets.
+        This Reviewer model have all the necessary fields to manage the photo restaurant.
 
         :param Audit: AuditModel acts as an abstract base class from which every other model in the project will inherit. This class provides
         :type Audit: Model.
